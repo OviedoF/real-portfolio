@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300&family=Courgette&family=Didact+Gothic&family=Familjen+Grotesk&family=Montserrat:wght@300&family=Roboto:wght@300&family=Sawarabi+Gothic&display=swap');
-body {
-	font-family: 'Roboto', sans-serif;
-}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -20,6 +20,7 @@ time, mark, audio, video {
 	padding: 0;
 	border: 0;
 	font-size: 100%;
+	font: inherit;
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
@@ -30,26 +31,18 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
 }
-
 ol, ul {
 	list-style: none;
 }
-
 blockquote, q {
 	quotes: none;
 }
-
 blockquote:before, blockquote:after,
 q:before, q:after {
 	content: '';
 	content: none;
 }
-
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-
-/* themes */
-
-/* ------ */

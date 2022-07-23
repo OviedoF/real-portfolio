@@ -1,0 +1,27 @@
+@mixin dark-green-theme(){
+    :root{
+        --dark: #041122;
+        --normal-color: #259073;
+        --light-color: #7FDA89;
+        --very-light: #E6F99D;
+        --text-color: #FEFEFE;
+    }
+}
+
+@mixin dark-pink-theme(){
+    --dark: #060930;
+    --normal-color: #333456;
+    --light-color: #595B83;
+    --very-light: #F4ABC4;
+    --text-color: #FEFEFE;
+}
+
+@mixin dark-ocean-theme(){
+    :root{
+        --dark: #100F0F;
+        --normal-color: #0F3D3E;
+        --light-color: #E2DCC8;
+        --very-light: #F1F1F1;
+        --text-color: #FEFEFE;
+    }
+}
