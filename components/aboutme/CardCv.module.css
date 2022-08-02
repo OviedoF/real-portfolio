@@ -1,0 +1,50 @@
+.cardCv {
+  width: 33%;
+  position: relative;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.cardCv::before {
+  content: '';
+  width: 10px;
+  height: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-left: 2px solid var(--color-vl);
+  border-bottom: 2px solid var(--color-vl);
+  position: absolute;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  bottom: 0px;
+  left: 0px;
+}
+
+.cardCv::after {
+  content: '';
+  width: 10px;
+  height: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-right: 2px solid var(--color-vl);
+  border-top: 2px solid var(--color-vl);
+  position: absolute;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  top: 0px;
+  right: 0px;
+}
+
+.cardCv:hover::after, .cardCv:hover::before {
+  width: 100%;
+  height: 100%;
+}
+/*# sourceMappingURL=CardCv.module.css.map */

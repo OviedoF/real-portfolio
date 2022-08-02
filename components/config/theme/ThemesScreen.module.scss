@@ -1,0 +1,41 @@
+.menu{
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--color-verydark);
+    color: var(--text-color);
+    position: fixed;
+    z-index: 999999;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+    #title{
+        font-size: 30px;
+        overflow: hidden;
+
+        span{
+            position: relative;
+            animation: appear 1s ease;
+        }
+    }
+}
+
+.images{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    height: 60%;
+}
+
+@keyframes appear{
+    0%{
+        bottom: -200%;
+    }
+
+    100%{
+        bottom: 0;
+    }
+}

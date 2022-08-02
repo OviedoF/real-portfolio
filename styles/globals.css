@@ -1,6 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300&family=Courgette&family=Didact+Gothic&family=Familjen+Grotesk&family=Montserrat:wght@300&family=Roboto:wght@300&family=Sawarabi+Gothic&display=swap');
+@font-face {
+	font-family: sf-mono;
+	src: url('../assets/fonts/sf_mono/SFMonoRegular.otf');
+}
+
+header{
+	font-family: sf-mono, sans-serif;
+}
+
 body {
-	font-family: 'Roboto', sans-serif;
+	font-family: sans-serif;
 }
 
 html, body, div, span, applet, object, iframe,
@@ -48,6 +56,14 @@ q:before, q:after {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
+}
+
+section{
+	margin-top: 70px;
+}
+
+section#homeSection{
+	margin-top: 0;
 }
 
 /* themes */

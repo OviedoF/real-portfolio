@@ -1,0 +1,32 @@
+.copy{
+    width: 50%;
+    position: relative;
+
+    &::after{
+        content: '';
+        height: 100%;
+        width: 3px;
+        border-radius: 20px;
+        background-color: var(--color-l);
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: 9;
+    }
+    
+    h2{
+        font-size: 25px;
+        margin-top: 0px;
+    }
+
+    p{
+        font-size: 18px;
+        margin-top: 20px;
+
+        &.copyright{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+    }
+}

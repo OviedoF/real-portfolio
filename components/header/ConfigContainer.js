@@ -9,15 +9,17 @@ const ConfigContainer = () => {
 
     return (
         <div>
-            <ConfigButton icon={faPalette} />
-            <ConfigButton icon={faLanguage} />
-            <ConfigButton icon={faArrowRightFromBracket} action={handleHeader}/>
+            <ConfigButton icon={faPalette} screen={'themes'}/>
+            <ConfigButton icon={faLanguage} screen={'language'}/>
+            <ConfigButton icon={faArrowRightFromBracket} action={handleHeader} screen={'nav'}/>
 
             <style jsx>{`
                 div{
-                    width: 20%;
+                    width: auto;
+                    height: 100%;
                     display: flex;
-                    justify-content: flex-end;
+                    align-items: center;
+                    justify-content: center;
                 }
             `}</style>
         </div>

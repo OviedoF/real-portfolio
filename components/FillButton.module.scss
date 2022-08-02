@@ -1,0 +1,32 @@
+.fill{
+  height: 50px;
+  width: 60%;
+  font-size: 20px;
+  font-weight: 200;
+  letter-spacing: 1px;
+  padding: 13px 20px 13px;
+  outline: 0;
+  z-index: 1;
+  border: 1px solid black;
+  cursor: pointer;
+  position: relative;
+  border: 1px solid var(--color-vl);
+  background-color: transparent;
+
+  &::after{
+      content: "";
+      background-color: var(--color-l);
+      width: 100%;
+      z-index: -1;
+      position: absolute;
+      height: 100%;
+      top: 7px;
+      left: 7px;
+      transition: 0.2s;
+  }
+
+  &:hover::after{
+      top: 0;
+      left: 0;
+  }
+}

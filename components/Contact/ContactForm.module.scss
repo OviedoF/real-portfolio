@@ -1,0 +1,65 @@
+.form{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: space-around;
+    width: 50%;
+    border-radius: 15px;
+    padding: 30px;
+    box-sizing: border-box;
+    background-color: var(--color-ldark);
+    box-shadow: 0 0.0625em 0.0625em rgb(0 0 0 / 25%), 0 0.125em 0.5em rgb(0 0 0 / 25%), inset 0 0 0 1px hsl(0deg 0% 100% / 10%);
+
+    input{
+        margin-top: 30px;
+        font-size: 18px;
+        height: 40px;
+        border: none;
+        background: none;
+        border-bottom: 1px solid var(--color-vl);
+        color: inherit;
+    }
+
+    textarea{
+        font-size: 18px;
+        color: inherit;
+        margin-top: 30px;
+        border: none;
+        background: none;
+        border-bottom: 1px solid var(--color-vl);
+    }
+
+    button{
+        margin-top: 30px;
+        height: 50px;
+        width: 100%;
+        font-size: 20px;
+        font-weight: 200;
+        letter-spacing: 1px;
+        padding: 13px 20px 13px;
+        outline: 0;
+        z-index: 1;
+        border: 1px solid black;
+        cursor: pointer;
+        position: relative;
+        border: 1px solid var(--color-vl);
+        background-color: transparent;
+      
+        &::after{
+            content: "";
+            background-color: var(--color-l);
+            width: 100%;
+            z-index: -1;
+            position: absolute;
+            height: 100%;
+            top: 7px;
+            left: 7px;
+            transition: 0.2s;
+        }
+      
+        &:hover::after{
+            top: 0;
+            left: 0;
+        }
+      }
+}

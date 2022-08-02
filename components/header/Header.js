@@ -1,27 +1,31 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Image from 'next/image';
 import logo from '../../assets/images/image.png';
 import Navigation from './Navigation';
-import ConfigContainer from './ConfigContainer';
+import { useSelector } from 'react-redux';
 
-export default function Header() {
+export default function Header({}) {
+  const themeActive = useSelector(state => state.themeActive);
+  
   return (
-    <header>
-      <div className="logo">
-        <Image src={logo} width={100} height={100} layout='fixed' srcSet={'1x'} objectFit='contain' style={{cursor: 'pointer'}} alt="logo"/>
-      </div>
+    <header style={{backgroundColor: `${themeActive.color_dark}`}}>
 
       <Navigation />
 
-      <ConfigContainer />
-
         <style jsx>{`
-            header{
-                position: relative;
+              header{
+                z-index: 9999;
+                position: fixed;
                 display: flex;
-                background-color: var(--dark);
                 width: 100%;
                 height: 60px;
+                --color-vl: ${themeActive.color_vl} ;
+                --color-l: ${themeActive.color_l};
+                --color-md: ${themeActive.color_md};
+                --color-ldark: ${themeActive.color_ldark};
+                --color-dark: ${themeActive.color_dark};
+                --color-verydark: ${themeActive.color_vdark};
+                --text-color: ${themeActive.text_color};
             }    
 
             .logo{
@@ -30,7 +34,7 @@ export default function Header() {
               align-items: center;
               width: 13%;
               height: 100%;
-              position: relative;
+              position: absolute;
             }
         `}</style>
     </header>

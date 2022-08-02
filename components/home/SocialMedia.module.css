@@ -1,0 +1,50 @@
+.social_media {
+  position: fixed;
+  bottom: -20px;
+  left: 7%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 55%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: var(--color-vl);
+}
+
+.social_media hr {
+  height: 50%;
+  border: none;
+  width: 1px;
+  background-color: var(--color-vl);
+}
+
+.social_media ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 50%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.social_media ul li:hover {
+  -webkit-transition: all .4s;
+  transition: all .4s;
+  color: var(--color-l);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  cursor: pointer;
+}
+/*# sourceMappingURL=SocialMedia.module.css.map */

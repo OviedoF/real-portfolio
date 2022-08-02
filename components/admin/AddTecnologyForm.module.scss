@@ -1,0 +1,54 @@
+#form{
+    background-color: var(--color-ldark);
+    border: 1px solid var(--color-vl);
+    border-radius: 20px;
+    width: 70%;
+    height: 50%;
+    display: flex;
+    padding: 30px;
+    box-sizing: border-box;
+    position: relative;
+
+    div{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        align-items: center;
+        justify-content: space-evenly;
+
+        .principal{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+
+        input, textarea{
+            width: 80%;
+            height: 30px;
+            background-color: transparent;
+            border: none;
+            border-bottom: 1px solid var(--color-vl);
+            color: #FEFEFE;
+
+            &[type="checkbox"]{
+                height: 18px;
+            }
+        }
+
+        textarea{
+            height: 80px;
+        }
+
+    }
+
+    input[type="submit"]{
+        position: absolute;
+        bottom: 0px;
+        right: 10px;
+        height: 30px;
+        background-color:transparent;
+        color: #FEFEFE;
+        border: none;
+        cursor: pointer;
+    }
+}

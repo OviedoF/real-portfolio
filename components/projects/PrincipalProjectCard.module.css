@@ -1,0 +1,118 @@
+.card {
+  margin-top: 70px;
+  width: 100%;
+  height: 50vh;
+  padding: 30px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.card .slide_container {
+  width: 55%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.card .slide_container .pictureCard {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.card .slide_container .pictureCard::after {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-md);
+  opacity: 0.4;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+.card .slide_container .pictureCard:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.card .slide_container .pictureCard:hover::after {
+  opacity: 0;
+}
+
+.card .text {
+  width: 40%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.card .text p {
+  font-size: 18px;
+  color: var(--color-vl);
+}
+
+.card .text h3 {
+  font-size: 25px;
+}
+
+.card .text .description {
+  background-color: var(--color-ldark);
+  padding: 30px;
+  width: 120%;
+  border-radius: 5px;
+  z-index: 3;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+          box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.card .text ul.tools {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  color: var(--color-vl);
+}
+
+.card .text ul.tools li:not(:first-child) {
+  margin-left: 10px;
+}
+
+.card .text .links {
+  cursor: pointer;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 50px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.card .text .links .icon {
+  width: 60%;
+  height: 100%;
+}
+/*# sourceMappingURL=PrincipalProjectCard.module.css.map */

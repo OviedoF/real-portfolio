@@ -1,0 +1,27 @@
+.container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 23%;
+
+    h2{
+        font-size: 22px;
+    }
+
+    a{
+        font-size: 13px;
+        color: inherit;
+    }
+}
+
+@keyframes appear{
+    0%{
+        bottom: -200%;
+    }
+
+    100%{
+        bottom: 0;
+    }
+}

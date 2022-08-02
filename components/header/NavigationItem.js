@@ -14,7 +14,7 @@ export default function NavigationItem({position, handleAppear, setDotOpacity, t
                 color: var(--text-color);
                 font-weight: 500;
                 text-decoration: none;
-                font-size: 1.2em;
+                font-size: 1em;
                 text-transform: uppercase;
                 display: flex;
                 justify-content: center;
@@ -23,7 +23,7 @@ export default function NavigationItem({position, handleAppear, setDotOpacity, t
             }
 
             a:hover {
-                color: var(--light-color);
+                color: var(--color-l);
             }
         `}</style>
     </li>
