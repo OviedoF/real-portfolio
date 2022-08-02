@@ -3,7 +3,13 @@ import styles from './ContactForm.module.scss';
 
 export default function ContactForm() {
   return (
-    <form action="https://formsubmit.co/your@email.com" method="POST" className={styles.form}>
+    <form 
+    action="https://formsubmit.co/your@email.com" 
+    method="POST" 
+    className={styles.form}
+    data-aos='fade-right'
+    data-aos-offset="300"
+    >
         <input type="text" name='name' placeholder='Full Name'/>
 
         <input type="email" name="email" id="" placeholder='E-Mail'/>

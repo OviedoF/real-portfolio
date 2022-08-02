@@ -9,7 +9,12 @@ import {faArrowUpRightFromSquare} from '@fortawesome/free-solid-svg-icons';
 
 export default function PrincipalProjectCard({project, reverse}) {
   return (
-    <div className={styles.card} direction={reverse ? 'reverse' : 'normal'}>
+    <div 
+        className={styles.card} 
+        direction={reverse ? 'reverse' : 'normal'}
+        data-aos={reverse ? 'fade-left' : 'fade-right'}
+        data-aos-offset="200"
+    >
             <div className={styles.slide_container} >
                 <AwesomeSlider mobileTouch bullets={false} className={styles.awesomeSlider}>
                     {project.imagesUrls.map((el, index) => {

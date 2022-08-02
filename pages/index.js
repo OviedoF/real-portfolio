@@ -2,16 +2,23 @@ import ThemeScreen from '../components/config/theme/ThemesScreen';
 import axios from 'axios';
 import { useSelector } from 'react-redux';
 import Home from '../components/home/Home';
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import SocialMedia from '../components/home/SocialMedia';
 import AboutMeSection from '../components/aboutme/AboutMeSection';
 import ProjectsSection from '../components/projects/ProjectsSection';
 import ContactSection from '../components/Contact/ContactSection';
+import Aos from 'aos';
+import "aos/dist/aos.css";
 
 export default function Index({themes, projectsPrincipal, projectsSecundario, tecnologies}) {
   const screensActive = useSelector(state => state.screensActive);
   const themeActive = useSelector(state => state.themeActive);
-  console.log(tecnologies);
+
+  useEffect(() => {
+    Aos.init({
+        duration: 1200
+    });
+  }, []);
   
   return (
     <main style={{padding: '0px 15%', backgroundColor: 'var(--color-dark)'}} theme={themeActive._id} >

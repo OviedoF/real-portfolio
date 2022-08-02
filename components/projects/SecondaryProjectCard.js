@@ -10,7 +10,11 @@ import 'react-awesome-slider/dist/styles.css';
 
 export default function SecondaryProjectCard({project}) {
   return (
-    <picture className={styles.card}>
+    <picture 
+    className={styles.card} 
+    data-aos="fade-up"
+    data-aos-offset="300"
+    >
         <h4>{project.name}</h4>
         <ul className={styles.toolsContainer}>
           {project.tools.map(el => {

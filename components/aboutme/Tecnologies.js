@@ -15,17 +15,17 @@ export default function Tecnologies({tecnologies}) {
 
   return (
     <div>
-        <h3>My friends as Front-End are...</h3>
+        <h3 data-aos="fade-right" data-aos-duration="500">My friends as Front-End are...</h3>
         <div className='container-tecn'>
-            {frontend.map(el =>{ 
-                return <TecnologyCard el={el} key={el._id}/>
+            {frontend.map((el, index) =>{ 
+                return <TecnologyCard el={el} key={el._id} index={index}/>
             })}
         </div>
 
-        <h3>And, in the <span>dark side</span> Back-End are...</h3>
+        <h3 data-aos="fade-right" data-aos-duration="500">And, in the <span>dark side</span> Back-End are...</h3>
         <div className='container-tecn'>
-            {backend.map(el =>{ 
-                return <TecnologyCard el={el} key={el._id}/>
+            {backend.map((el, index) =>{ 
+                return <TecnologyCard el={el} key={el._id} index={index}/>
             })}
         </div>
 

@@ -7,7 +7,7 @@ import CardCv from './CardCv';
 export default function AboutMeInfo() {
 
   return (
-    <div className={styles.card} >
+    <div className={styles.card} data-aos="fade-left">
         <CardCv />
         <AboutMeText />
     </div>

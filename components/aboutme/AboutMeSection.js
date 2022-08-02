@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import SubtitleSection from '../SubtitleSection';
 import AboutMeInfo from './AboutMeInfo';
 import Tecnologies from './Tecnologies';

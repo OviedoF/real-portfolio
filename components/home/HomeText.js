@@ -1,8 +1,9 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react';
 import Typewriter from "typewriter-effect";
 import styles from './HomeText.module.scss';
 
 export default function HomeText() {
+
   return (
     <div className={styles.container}>
 

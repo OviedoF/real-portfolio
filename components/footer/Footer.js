@@ -8,7 +8,6 @@ import Redirects from './Redirects'
 
 export default function Footer() {
   const themeActive = useSelector(state => state.themeActive);
-  console.log(themeActive);
 
   return (
     <footer className={styles.footer}>

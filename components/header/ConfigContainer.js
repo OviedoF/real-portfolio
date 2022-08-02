@@ -11,7 +11,6 @@ const ConfigContainer = () => {
         <div>
             <ConfigButton icon={faPalette} screen={'themes'}/>
             <ConfigButton icon={faLanguage} screen={'language'}/>
-            <ConfigButton icon={faArrowRightFromBracket} action={handleHeader} screen={'nav'}/>
 
             <style jsx>{`
                 div{
