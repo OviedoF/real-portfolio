@@ -5,7 +5,7 @@ import Tecnologies from './Tecnologies';
 
 const AboutMeSection = ({tecnologies}) => {
     return (
-        <section>
+        <section id='aboutme'>
             <SubtitleSection section={'About Me'} number={'02'}/>
 
             <AboutMeInfo />

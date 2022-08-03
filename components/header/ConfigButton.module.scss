@@ -9,6 +9,20 @@
     border: none;
     padding: 18pxpx;
     color: var(--text-color);
+    justify-content: center;
+
+    &.button_nav{
+        width: 0;
+
+        #nav_activator{
+            fill: var(--text-color);
+            height: 25px;
+            background: transparent;
+            clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0 100%);;
+            transition: all 1s;
+            display: none;
+        }
+    }
 
     .border{
         height: 0%;
@@ -25,5 +39,17 @@
     div{
         top: 0;
         height: 100%;
+    }
+}
+
+@media only screen and (max-width: 550px){
+    #button{
+        &.button_nav{
+            width: 60px;
+            
+            #nav_activator{
+                display: block;
+            }
+        }
     }
 }

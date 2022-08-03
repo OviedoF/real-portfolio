@@ -35,3 +35,17 @@
         }
     }
 }
+
+@media only screen and (max-width: 500px){
+    .redirects{
+        flex-direction: column;
+
+        ul#page{
+            display: none;
+        }
+
+        ul{
+            font-size: 13px;;
+        }
+    }
+}

@@ -28,6 +28,28 @@
     justify-content: space-between;
     width: 80%;
     height: 60%;
+    overflow: scroll;
+}
+
+.images::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+.images::-webkit-scrollbar:vertical {
+    width:5px;
+}
+
+.images::-webkit-scrollbar-button:increment,.images::-webkit-scrollbar-button {
+    display: none;
+} 
+
+.images::-webkit-scrollbar:horizontal {
+    display: none;
+}
+
+.images::-webkit-scrollbar-thumb {
+    background-color: var(--color-l);
+    border-radius: 50px;
 }
 
 @keyframes appear{
@@ -37,5 +59,20 @@
 
     100%{
         bottom: 0;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .images{
+        flex-wrap: wrap;
+        height: 80%;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .menu{
+        #title{
+            font-size: 20px;
+        }
     }
 }

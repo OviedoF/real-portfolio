@@ -33,12 +33,29 @@
 
 @media only screen and (max-width: 768px){
     .copy{
+
         h2{
             font-size: 18px;
         }
 
         p{
             font-size: 15px;
+        }
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .copy{
+        &::after{
+            display: none;
+        }
+        
+        h2{
+            font-size: 16px;
+        }
+        
+        p{
+            font-size: 13px;
         }
     }
 }

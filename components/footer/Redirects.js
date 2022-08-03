@@ -6,7 +6,7 @@ export default function Redirects() {
     <div className={styles.redirects}>
               <div>
                             <p>View again! :)</p>
-                            <ul>
+                            <ul id={styles.page}>
                               <li>Home</li>
                               <li>About</li>
                               <li>Works</li>

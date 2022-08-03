@@ -1,52 +1,48 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState } from "react";
 import ConfigContainer from "./ConfigContainer";
 import NavigationItem from "./NavigationItem";
+import { faXmark } from "@fortawesome/free-solid-svg-icons";
+import styles from './Navigation.module.scss';
 
 function Navigation() {
-    const [dotPosition, setDotPosition] = useState(0);
-    const [dotOpacity, setDotOpacity] = useState(0);
-
-    const handleAppear = (position) => {
-        setDotPosition(position);
-        setDotOpacity(1);
-    }
+    const [isMobileNavActive, setIsMobileNavActive] = useState(false);
 
     return ( 
-    <nav className="navMenu">
-        <ul>
-            <NavigationItem handleAppear={handleAppear} setDotOpacity={setDotOpacity} position={0} text={'01.home'}/>
+    <nav className={styles.navMenu}>
+        <ul id={styles.nav_desktop}>
+            <NavigationItem position={0} text={'01.home'} redirect='#homeSection'/>
 
-            <NavigationItem handleAppear={handleAppear} setDotOpacity={setDotOpacity} position={31} text={'02.about'}/>
+            <NavigationItem position={31} text={'02.about'} redirect='#aboutme'/>
 
-            <NavigationItem handleAppear={handleAppear} setDotOpacity={setDotOpacity} position={62} text={'03.work'}/>
+            <NavigationItem position={62} text={'03.work'} redirect='#work'/>
 
-            <NavigationItem handleAppear={handleAppear} setDotOpacity={setDotOpacity} position={99} text={'04.contact'}/>
+            <NavigationItem position={99} text={'04.contact'} redirect='#contact'/>
         </ul>
 
-        <div className="dot_container">
-            <div className="dot" />
+        <div id={styles.nav_mobile} className={isMobileNavActive ? styles.active : styles.desactive}>
+            <div className={styles.background} >
+                <FontAwesomeIcon 
+                icon={faXmark} 
+                className={styles.xmark}
+                style={{height: '30px', position: 'absolute', top: '20px', right: '30px'}}
+                onClick={() => setIsMobileNavActive(false)}
+                />
+            </div>
+            
+
+            <ul>
+                <NavigationItem position={0} text={'01.home'} redirect='#homeSection'/>
+
+                <NavigationItem position={31} text={'02.about'} redirect='#aboutme'/>
+
+                <NavigationItem position={62} text={'03.work'} redirect='#work'/>
+
+                <NavigationItem position={99} text={'04.contact'} redirect='#contact'/>
+            </ul>
         </div>
 
-        <ConfigContainer />
-       
-
-        <style jsx>{`
-
-        .navMenu{
-            width: 100%;
-            height: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: space-evenly;
-            position: relative;
-        }
-
-        ul{
-            display: flex;
-            width: 83%;
-            justify-content: flex-end;
-        }
-            `}</style>
+        <ConfigContainer setIsMobileNavActive={setIsMobileNavActive} isMobileNavActive={isMobileNavActive}/>
     </nav>
      );
 }

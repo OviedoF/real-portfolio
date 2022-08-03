@@ -4,6 +4,7 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    height: 99%;
     width: 23%;
 
     h2{
@@ -23,5 +24,21 @@
 
     100%{
         bottom: 0;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .container{
+        h2{
+            font-size: 18px;
+        }
+        width: 45%;
+        
+        height: 60%;
+        margin-top: 70px;
+
+        a{
+            font-size: 10px;
+        }
     }
 }

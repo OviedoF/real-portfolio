@@ -64,14 +64,30 @@
 
 @media only screen and (max-width: 425px){
     .container{
+        width: 100%;
+        left: 0%;
+        top: 90%;
+        justify-content: flex-start;
         h1{
             font-size: 40px;
+            width: 100%;
+            margin: 0;
         }
 
         .subtext{
             width: 100%;
             font-size: 14px;
             justify-content: flex-start;
+            left: 0;
+            margin-top: 20px;
+
+            hr{
+                display: block;
+            }
+
+            .typewriter{
+                margin-left: 0;
+            }
         }
     }
 }

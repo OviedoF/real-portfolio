@@ -6,7 +6,7 @@ import DirectContact from './DirectContact';
 
 export default function ContactSection() {
   return (
-    <section style={{marginTop: '70px'}}>
+    <section style={{marginTop: '70px'}} id='contact'>
         <SubtitleSection number={'04'} section={'Contact'} />
 
         <div className={styles.container}>

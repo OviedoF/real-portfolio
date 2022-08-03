@@ -43,12 +43,12 @@ export default function Tecnologies({tecnologies}) {
                 width: 100%;
                 justify-content: center;
                 display: flex;
-                overflow: scroll;
             }
 
             @media only screen and (max-width: 600px) {
                 .container-tecn{
                     flex-wrap: wrap;
+                    overflow: scroll;
                 }
             }
 

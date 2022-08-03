@@ -10,7 +10,7 @@ export default function ProjectsSection({projectsPrincipal, projectsSecundario})
   }
 
   return (
-    <section className={styles.section}>
+    <section className={styles.section} id='work'>
         <SubtitleSection 
             section={'Work'} 
             number={'03'}

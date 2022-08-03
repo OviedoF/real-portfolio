@@ -1,13 +1,14 @@
 import React from 'react'
 
-export default function NavigationItem({position, handleAppear, setDotOpacity, text}) {
+export default function NavigationItem({position, text, redirect}) {
   return (
-    <li onMouseEnter={(e) => handleAppear(position)} >
-        <a href="" onMouseLeave={() => setDotOpacity(0)}> {text} </a>
+    <li>
+        <a href={redirect}> {text} </a>
 
         <style jsx>{`
             li{
                 margin-lefT: 20px;
+                overflow: hidden;
             }
             
             a {
@@ -15,15 +16,28 @@ export default function NavigationItem({position, handleAppear, setDotOpacity, t
                 font-weight: 500;
                 text-decoration: none;
                 font-size: 1em;
+                position: relative;
+                top: 0px;
                 text-transform: uppercase;
                 display: flex;
                 justify-content: center;
                 -webkit-transition: all 0.2s ease-in-out;
                 transition: all 0.2s ease-in-out;
+                animation: appear .5s ease;
             }
 
             a:hover {
                 color: var(--color-l);
+            }
+
+            @keyframes appear{
+                0%{
+                    top: 100%;
+                }
+
+                100%{
+                    top: 0;
+                }
             }
         `}</style>
     </li>

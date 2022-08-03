@@ -46,9 +46,10 @@
 
 @media only screen and (max-width: 425px){
     .home{
-        height: 80vh;
+        height: 100vh;
         .presentation{
-            width: 60%;
+            height: 50%;
+            width: 100%;
         }
     }
 }
