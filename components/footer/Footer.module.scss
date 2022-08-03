@@ -1,6 +1,6 @@
 .footer{
     width: 100%;
-    padding: 70px 15%;
+    padding: 70px 13%;
     box-sizing: border-box;
     background-color: var(--color-verydark);
     color: var(--color-vl);
@@ -10,4 +10,8 @@
         height: 100%;
         display: flex;
     }
+}
+
+@media only screen and (max-width: 768px){
+
 }

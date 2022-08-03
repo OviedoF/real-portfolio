@@ -8,7 +8,7 @@ export default function DirectContact() {
     <div 
     className={styles.container}     
     data-aos='fade-left'
-    data-aos-offset="300"
+    data-aos-offset="0"
     >
         <DirectCard 
         icon={faLinkedin}

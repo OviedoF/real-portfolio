@@ -5,6 +5,7 @@ import { Provider } from 'react-redux';
 import store from '../redux/store/index';
 import React, { useState, useEffect } from 'react';
 import Footer from '../components/footer/Footer';
+import '../assets/reset.css'
 
 function MyApp({ Component, pageProps }) {
   const [themes, setThemes] = useState([]);

@@ -1,6 +1,6 @@
 .a{
     position: relative;
-    width: 120px;
+    min-width: 120px;
     height: 120px;
     display: flex;
     flex-direction: column;
@@ -41,4 +41,12 @@
     position: absolute;
     bottom: -20px;
     transition: all .4s;
+}
+
+@media only screen and (max-width: 600px) {
+    .a{
+        min-width: 80px;
+        height: 80px;
+        padding: 20px;
+    }
 }

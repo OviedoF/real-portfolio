@@ -22,3 +22,33 @@
     
     }
 }
+
+@media only screen and (max-width: 768px) {
+    .home{
+        .presentation{
+            width: 60%;
+            position: absolute;
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .home{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        .presentation{
+            width: 50%;
+            height: 60%;
+        }
+    }
+}
+
+@media only screen and (max-width: 425px){
+    .home{
+        height: 80vh;
+        .presentation{
+            width: 60%;
+        }
+    }
+}

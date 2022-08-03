@@ -19,3 +19,19 @@
         }
     }
 }
+
+@media only screen and (max-width: 768px){
+    .redirects{
+        font-size: 15px;
+
+        div{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            p{
+                display: none;
+                font-size: 15px;
+            }
+        }
+    }
+}

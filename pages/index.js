@@ -36,6 +36,7 @@ export default function Index({themes, projectsPrincipal, projectsSecundario, te
 
       <style jsx>{`
         main{
+          overflow: hidden;
             --color-vl: ${themeActive.color_vl} ;
             --color-l: ${themeActive.color_l};
             --color-md: ${themeActive.color_md};
@@ -54,15 +55,15 @@ export async function getServerSideProps(){
       .then(response => response.data)
       .catch(err => console.log(err));
 
-  const projectsPrincipal = await axios(`https://real-portfolio-api.herokuapp.com/api/projects/type/principal`)
+  const projectsPrincipal = await axios(`${process.env.HOSTNAME}api/projects/type/principal`)
       .then(res => res.data)
       .catch(err => console.log(err));
 
-  const projectsSecundario = await axios(`https://real-portfolio-api.herokuapp.com/api/projects/type/secundario`)
+  const projectsSecundario = await axios(`${process.env.HOSTNAME}api/projects/type/secundario`)
   .then(res => res.data)
   .catch(err => console.log(err));
 
-  const tecnologies = await axios(`https://real-portfolio-api.herokuapp.com/api/tecnologies`)
+  const tecnologies = await axios(`${process.env.HOSTNAME}api/tecnologies`)
   .then(res => res.data)
   .catch(err => console.log(err));
  

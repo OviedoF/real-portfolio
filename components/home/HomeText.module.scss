@@ -36,3 +36,42 @@
     }
 
 }
+
+@media only screen and (max-width: 768px) {
+    .container{
+
+        h1{
+            width: 100%;
+            font-size: 400%;
+        }
+
+        .subtext{
+            justify-content: flex-end;
+            width: 70%;
+        }
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .container{
+        .subtext{
+            hr{
+                display: none;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 425px){
+    .container{
+        h1{
+            font-size: 40px;
+        }
+
+        .subtext{
+            width: 100%;
+            font-size: 14px;
+            justify-content: flex-start;
+        }
+    }
+}

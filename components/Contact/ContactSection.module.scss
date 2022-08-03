@@ -7,3 +7,10 @@
     padding-bottom: 100px;
     justify-content: space-between;
 }
+
+@media only screen and (max-width: 768px){
+    .container{
+        flex-direction: column;
+        align-items: center;
+    }
+}

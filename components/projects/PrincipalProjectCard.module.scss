@@ -120,3 +120,112 @@
         }
     }
 }
+
+@media only screen and (max-width: 768px){
+    .card{
+        flex-direction: column;
+        padding: 0;
+        align-items: center;
+        height: 70vh;
+
+        &[direction="reverse"]{
+            flex-direction: row;
+        }
+
+        .slide_container{
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 80%;
+            left: 10%;
+            height: auto;
+            height: 45%;
+        }
+
+        .text{
+            justify-content: flex-start;
+            height: 50%;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+
+            p{
+                width: 100%;
+                text-align: end;
+            }
+
+            h3{
+                width: 100%;
+                text-align: center;
+            }
+
+            .description{
+                margin-top: 20px;
+                width: 100%;
+                box-sizing: border-box;
+            }
+
+            ul.tools{
+                margin-top: 20px;
+                justify-content: center;
+    
+                &[direction="normal"]{
+                    justify-content: center;
+                }
+            }
+
+            .links{
+                margin-top: 20px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .card{
+        height: 75vh;
+
+        .slide_container{
+            width: 80%;
+        }
+        .text{
+            p{
+                display: none;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 425px){
+    .card{
+        justify-content: flex-start;
+        position: relative;
+
+        .slide_container{
+            position: absolute;
+            left: 0;
+            width: 100%;
+            height: 35%;
+        }
+        .text{
+            height: 60%;
+
+            h3{
+                font-size: 20px;
+            }
+
+            .description{
+                font-size: 14px;
+                line-height: 17px;
+            }
+
+            ul.tools{
+                li{
+                    font-size: 13px;
+                    text-align: center;
+                    line-height: 17px;
+                }
+            }
+        }
+    }
+}

@@ -43,6 +43,19 @@ export default function Tecnologies({tecnologies}) {
                 width: 100%;
                 justify-content: center;
                 display: flex;
+                overflow: scroll;
+            }
+
+            @media only screen and (max-width: 600px) {
+                .container-tecn{
+                    flex-wrap: wrap;
+                }
+            }
+
+            @media only screen and (max-width: 425px){
+                h3{
+                    font-size: 18px;
+                }
             }
         `}</style>
     </div>

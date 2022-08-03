@@ -33,3 +33,29 @@
         }
     }
 }
+
+@media only screen and (max-width: 768px) {
+    .info{
+        width: 100%;
+        margin-bottom: 70px;
+    }
+}
+
+@media only screen and (max-width: 425px){
+    .info{
+        h3{
+            font-size: 20px;
+        }
+
+        p{
+            font-size: 14px;
+        }
+
+        ul{
+            li{
+                width: 100%;
+                font-size: 12px;
+            }
+        }
+    }
+}

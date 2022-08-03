@@ -17,7 +17,7 @@ export default function Header({}) {
                 z-index: 9999;
                 position: fixed;
                 display: flex;
-                width: 100%;
+                width: 100vw;
                 height: 60px;
                 --color-vl: ${themeActive.color_vl} ;
                 --color-l: ${themeActive.color_l};
