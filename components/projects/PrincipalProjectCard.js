@@ -6,8 +6,11 @@ import 'react-awesome-slider/dist/styles.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import {faArrowUpRightFromSquare} from '@fortawesome/free-solid-svg-icons';
+import { useTranslation } from 'react-i18next';
 
 export default function PrincipalProjectCard({project, reverse}) {
+    const [t, i18n] = useTranslation("global");
+
   return (
     <div 
         className={styles.card} 
@@ -26,11 +29,11 @@ export default function PrincipalProjectCard({project, reverse}) {
             </div>
 
             <div className={styles.text} direction={reverse ? 'reverse' : 'normal'}>
-                <p>Featured Project</p>
+                <p>{t("Experience.featured")}</p>
                 <h3>{project.name}</h3>
 
                 <div className={styles.description}>
-                    {project.description}
+                    {project[`description_${i18n.language}`]}
                 </div>
 
                 <ul className={styles.tools} direction={reverse ? 'reverse' : 'normal'}>

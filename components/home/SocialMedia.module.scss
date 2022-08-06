@@ -22,6 +22,11 @@
         justify-content: space-around;
         align-items: center;
 
+        li a{
+            color: inherit;
+            text-decoration: none;
+        }
+
         li:hover{
             transition: all .4s;
             color: var(--color-l);

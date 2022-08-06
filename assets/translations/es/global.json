@@ -1,0 +1,81 @@
+{
+    "header": {
+        "nav": {
+            "home": "Inicio",
+            "about": "Sobre mi",
+            "work": "Experiencia",
+            "contact": "Contacto"
+        }
+    },
+    "ThemesScreen": {
+        "choose": "Elije un tema de colores :)",
+        "Deep-Forests": "Bosque profundo",
+        "Underwater": "Bajo el agua",
+        "Pink-Horizon": "Horizonte rosa",
+        "Princess": "Mononoke",
+        "artist-mention": "Ilustración creada por "
+    },
+    "LanguageScreen": {
+        "choose": "Elije tu lenguaje!",
+        "spanish": "Español",
+        "english": "Inglés"
+    },
+    "Home": {
+        "subtitles": {
+            "full-stack": "Desarrollador Full-Stack",
+            "codder": "Programador",
+            "react-dev": "Desarrollador React",
+            "web-designer": "Diseñador web",
+            "geek": "Friki",
+            "stacks": "Desarrollador MERN y MEAN",
+            "nextjs": "Desarrollador Next.JS"
+        }
+    },
+    "About": {
+        "download-cv": "Descargar CV",
+        "title": "Desarrollador Full-Stack",
+        "description": "Soy un chico de 19 años al cual le gusta la programación, todo empezó desde que tenñia 16 años y descubrí el desarrollo web mientras navegaba por internet. Lo que me llevó a estudiar de forma independiente todo lo relacionado a este nicho y así fui queriendo más y más cada tecnología según avanzaba el tiempo, sobre todo en lo que tenga que ver con el ecosistema de React, pero sin dejar de lado Angular.",
+        "birthday": "Birthday: 07 de marzo de 2003",
+        "hobbies": "Hobbies: Gatos, internet y autos",
+        "phone": "Teléfono: +54 392 621665",
+        "freelancer": "Freelancer: Disponible",
+        "carrer": "Carrera: Ingeniería en computación (en proceso)",
+        "country": "País: Argentina",
+        "email": "Email: oviedofederico039@gmail.com",
+        "searching-job": "Buscando trabajo Tiempo completo y parcial",
+        "frontend-friends": "Mis amigos en el Front-End son:",
+        "backend-friends1": "Y en el ",
+        "backend-friends2": "lado oscuro",
+        "backend-friends3": " Back-End son:"
+    },
+    "Experience": {
+        "featured": "Proyecto destacado!"
+    },
+    "Contact": {
+        "full-name": "Nombre completo",
+        "e-mail": "Dirección de correo electrónico",
+        "type-query": "Asunto",
+        "details": "Detalles o descripción",
+        "send": "Enviar"
+    },
+    "Footer": {
+        "title": "OviDev por Federico Oviedo",
+        "copyright": "© Todos los derechos reservados por Oviedo Federico, 2022.",
+        "view_again": {
+            "title": "Mira de vuelta!",
+            "home": "Inicio",
+            "about": "Sobre mi",
+            "work": "Experiencia",
+            "contact": "Contacto"
+        },
+        "contact": {
+            "title": "Encuentrame en ",
+            "facebook": "Facebook como Federico Nahuel Oviedo",
+            "freelancer": "Freelancer.com como @oviedofederico03",
+            "fiverr": "Fiverr.com como federicooviedo",
+            "email": "Mi email como oviedofederico039@gmail.com",
+            "linkedin": "LinkedIn como Federico Oviedo",
+            "github": "GitHub como OviedoF"
+        }
+    }
+}

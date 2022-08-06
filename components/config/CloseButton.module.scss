@@ -16,6 +16,12 @@
             animation: effect .5s ease;
         }
     }
+
+    &[position="bottom"]{
+        bottom: 20px;
+        top: auto;
+        right: 20px;
+    }
 }
 
 

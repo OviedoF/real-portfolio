@@ -6,7 +6,7 @@ import { useRef } from 'react';
 import { useDispatch } from 'react-redux';
 import { quitScreen } from '../../redux/actions/screenActive.actions';
 
-export default function CloseButton({screen}) {
+export default function CloseButton({screen, position}) {
   const icon = useRef();
   const dispatch = useDispatch();
 
@@ -23,7 +23,8 @@ export default function CloseButton({screen}) {
   }
 
   return (
-    <div className={styles.hover} 
+    <div className={[styles.hover]} 
+      position={position}
       onMouseEnter={(e) => handleColor(e)} 
       onMouseLeave={(e) => handleColor(e)}
       onClick={screen ? () => dispatch(quitScreen(screen)) : ''}

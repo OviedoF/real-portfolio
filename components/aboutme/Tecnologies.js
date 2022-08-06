@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import TecnologyCard from './TecnologyCard';
+import { useTranslation } from 'react-i18next';
 
 export default function Tecnologies({tecnologies}) {
     const [frontend, setFrontend] = useState([]);
     const [backend, setBackend] = useState([]);
+    const [t] = useTranslation("global");
 
     useEffect(() => {
         const backendData = tecnologies.filter(el => el.type == 'backend');
@@ -15,14 +17,14 @@ export default function Tecnologies({tecnologies}) {
 
   return (
     <div>
-        <h3 data-aos="fade-right" data-aos-duration="500">My friends as Front-End are...</h3>
+        <h3 data-aos="fade-right" data-aos-duration="500">{t("About.frontend-friends")}</h3>
         <div className='container-tecn'>
             {frontend.map((el, index) =>{ 
                 return <TecnologyCard el={el} key={el._id} index={index}/>
             })}
         </div>
 
-        <h3 data-aos="fade-right" data-aos-duration="500">And, in the <span>dark side</span> Back-End are...</h3>
+        <h3 data-aos="fade-right" data-aos-duration="500">{t("About.backend-friends1")} <span> {t("About.backend-friends2")}</span> {t("About.backend-friends3")}</h3>
         <div className='container-tecn'>
             {backend.map((el, index) =>{ 
                 return <TecnologyCard el={el} key={el._id} index={index}/>

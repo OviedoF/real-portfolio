@@ -9,6 +9,7 @@ import ProjectsSection from '../components/projects/ProjectsSection';
 import ContactSection from '../components/Contact/ContactSection';
 import Aos from 'aos';
 import "aos/dist/aos.css";
+import LanguageScreen from '../components/config/language/LanguageScreen';
 
 export default function Index({themes, projectsPrincipal, projectsSecundario, tecnologies}) {
   const screensActive = useSelector(state => state.screensActive);
@@ -25,6 +26,8 @@ export default function Index({themes, projectsPrincipal, projectsSecundario, te
       {screensActive.themes ? <ThemeScreen themes={themes} screen={'themes'}/> : ''}
 
       <SocialMedia />
+
+      {screensActive.language ? <LanguageScreen /> : ''}
 
       <Home />
 

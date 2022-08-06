@@ -1,29 +1,21 @@
 import React from 'react'
 import styles from './Redirects.module.scss'
+import { useTranslation } from 'react-i18next'
 
 export default function Redirects() {
+  const [t] = useTranslation("global");
+
   return (
     <div className={styles.redirects}>
-              <div>
-                            <p>View again! :)</p>
-                            <ul id={styles.page}>
-                              <li>Home</li>
-                              <li>About</li>
-                              <li>Works</li>
-                              <li>Contact</li>
-                            </ul>
-              </div>
-
-
               <div >
-                <p>Or find me in this pages as</p>
+                <p>{t("Footer.contact.title")}</p>
                 <ul>
-                  <li>Facebook as</li>
-                  <li>Freelancer as</li>
-                  <li>Fiverr as</li>
-                  <li>Hotmail as</li>
-                  <li>Linkedin as</li>
-                  <li>Github as</li>
+                  <li>{t("Footer.contact.facebook")}</li>
+                  <li>{t("Footer.contact.freelancer")}</li>
+                  <li>{t("Footer.contact.fiverr")}</li>
+                  <li>{t("Footer.contact.email")}</li>
+                  <li>{t("Footer.contact.linkedin")}</li>
+                  <li>{t("Footer.contact.github")}</li>
                 </ul>
               </div>
 

@@ -3,12 +3,13 @@ import styles from './SecondaryProjectCard.module.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import {faArrowUpRightFromSquare} from '@fortawesome/free-solid-svg-icons';
-import Image from 'next/image';
-import AwesomeSlider from 'react-awesome-slider';
+import { useTranslation } from 'react-i18next';
 import 'react-awesome-slider/dist/styles.css';
 
 
 export default function SecondaryProjectCard({project}) {
+  const [t, i18n] = useTranslation("global");
+
   return (
     <picture 
     className={styles.card} 
@@ -22,7 +23,7 @@ export default function SecondaryProjectCard({project}) {
           })}
         </ul>
 
-        <p>{project.description}</p>
+        <p>{project[`description_${i18n.language}`]}</p>
 
         <ul className={styles.links}>
           <li><FontAwesomeIcon icon={faGithub} className={styles.icon} height={30}/></li>

@@ -5,7 +5,11 @@
     font-size: 18px;
 
     div{
-        width: 50%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
         p{
             width: 100%;
             text-align: center;
@@ -13,9 +17,14 @@
         }
         
         li{
-            margin-top: 15px;
+            margin-top: 25px;
             text-align: center;
             font-style: italic;
+
+            a{
+                color: inherit;
+                text-decoration: none;
+            }
         }
     }
 }

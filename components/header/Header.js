@@ -1,6 +1,4 @@
 import React, { useState } from 'react';
-import Image from 'next/image';
-import logo from '../../assets/images/image.png';
 import Navigation from './Navigation';
 import { useSelector } from 'react-redux';
 

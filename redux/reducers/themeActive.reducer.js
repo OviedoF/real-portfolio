@@ -1,21 +1,21 @@
 import { CHANGE_THEME } from "../types"
 
-const initialState = {
-    autor_image: "Erisiar",
-    color_dark: "#3B2942",
-    color_l: "#AC7CC0",
-    color_ldark: "#4A3D6E",
-    color_md: "#84558F",
-    color_vdark: "#2A1F49",
-    color_vl: "#D08CB1",
-    createdAt: "2022-07-24T07:58:13.630Z",
-    imageUrl: "http://res.cloudinary.com/syphhy/image/upload/v1658649493/p5mjon3ojdcqem7tajxf.jpg",
-    link_image: "https://www.deviantart.com/erisiar/art/Lillia-859185613",
-    link_gif: "https://res.cloudinary.com/syphhy/image/upload/v1658883977/pink_jeuwr3.gif",
-    name: "Pink Horizon",
+const initialState =   {
+    _id: "62dcf9f46a4b4316125eb273",
+    name: "Deep Forests",
+    imageUrl: "http://res.cloudinary.com/syphhy/image/upload/v1658649076/tl7hmnq7d9mj0vnvyhtp.jpg",
+    color_vl: "#4BB895",
+    color_l: "#2F7369",
+    color_md: "#214B4E",
+    color_ldark: "#1B363C",
+    color_dark: "#0D1F28",
+    color_vdark: "#09151F",
     text_color: "#FEFEFE",
-    updatedAt: "2022-07-24T07:58:13.630Z",
-    _id: "62dcfb954fb12a7fd542dd61"
+    autor_image: "Nele-Diel",
+    createdAt: "2022-07-24T07:51:16.466Z",
+    updatedAt: "2022-07-24T07:51:16.466Z",
+    link_image: "https://www.deviantart.com/nele-diel/art/Deep-Forests-698759283",
+    link_gif: "https://res.cloudinary.com/syphhy/image/upload/v1658883939/zeldabotw_vnlkmk.gif"
 }
 
 export default function themeActiveReducer(state = initialState, action) {

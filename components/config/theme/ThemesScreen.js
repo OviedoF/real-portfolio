@@ -4,7 +4,7 @@ import styles from './ThemesScreen.module.scss';import CloseButton from '../Clos
 import { useSelector } from 'react-redux';
 
 export default function ThemesScreen({themes, screen}) {
-  const theme = useSelector(state => state.themeActive);
+  const theme = useSelector(state => state);
   console.log(theme)
 
   return (
