@@ -32,7 +32,7 @@ export default function AddTecnologyForm() {
     dataForm.append('documentation_link', form.documentation_link);
     dataForm.append('type', form.type);
 
-    axios.post('http://localhost:4000/api/tecnologies', dataForm)
+    axios.post(`${process.env.HOSTNAME}api/tecnologies`, dataForm)
       .then(res => console.log(res.data))
       .catch(err => console.log(err));
   }

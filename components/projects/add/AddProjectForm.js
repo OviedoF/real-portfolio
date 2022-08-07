@@ -45,7 +45,7 @@ export default function AddProjectForm() {
     dataForm.append('deploy_link', form.deploy_link);
     dataForm.append('type', form.type);
 
-    axios.post('http://localhost:4000/api/projects', dataForm)
+    axios.post(`${process.env.HOSTNAME}api/projects`, dataForm)
       .then(res => console.log(res.data))
       .catch(err => console.log(err));
   }

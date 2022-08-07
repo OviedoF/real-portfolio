@@ -7,7 +7,8 @@ const nextConfig = {
   },
   env: {
     USER: process.env.USER,
-    PASS: process.env.PASS
+    PASS: process.env.PASS,
+    HOSTNAME: process.env.HOSTNAME
   }
 }
 
