@@ -77,5 +77,14 @@
             "linkedin": "LinkedIn as Federico Oviedo",
             "github": "GitHub as OviedoF"
         }
+    },
+    "login": {
+        "login": "Login",
+        "message": "Hey, stop right there! Do you have permission to be here?",
+        "opportunitiesMessage": "Ha! I knew it, you have ",
+        "moreAttemps": "more attemps.",
+        "nameAdmin": "Admin's username",
+        "passAdmin": "Admin's password",
+        "noMoreOpps": "I knew it! You are not allowed to be here, come back."
     }
 }

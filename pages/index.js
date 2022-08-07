@@ -16,6 +16,7 @@ import FullScreenLoading from '../components/loading/FullScreenLoading';
 export default function Index({themes, projectsPrincipal, projectsSecundario, tecnologies}) {
   const screensActive = useSelector(state => state.screensActive);
   const themeActive = useSelector(state => state.themeActive);
+  
   useEffect(() => {
     Aos.init({
         duration: 1200

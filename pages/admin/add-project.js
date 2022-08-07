@@ -1,12 +1,21 @@
 import ThemeScreen from '../../components/config/theme/ThemesScreen';
 import axios from 'axios';
 import { useSelector } from 'react-redux';
-import React from 'react';
+import React, { useEffect } from 'react';
 import AddProjectForm from '../../components/projects/add/AddProjectForm';
+import { useRouter } from 'next/router';
 
 export default function Index({themes, setThemes}) {
+  const router = useRouter();
   const screensActive = useSelector(state => state.screensActive);
   const themeActive = useSelector(state => state.themeActive);
+  const auth = useSelector(state => state.auth);
+
+  useEffect(() => {
+    if(!auth){
+      router.push('/');
+    }
+  }, []);
   
   return (
     <main style={{padding: '0px 15%', backgroundColor: 'var(--color-dark)'}} theme={themeActive._id} >

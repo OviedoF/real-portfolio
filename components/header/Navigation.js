@@ -13,13 +13,13 @@ function Navigation() {
     return ( 
     <nav className={styles.navMenu}>
         <ul id={styles.nav_desktop}>
-            <NavigationItem position={0} text={`01.${t("header.nav.home")}`} redirect='#homeSection'/>
+            <NavigationItem position={0} text={`01.${t("header.nav.home")}`} redirect='/#homeSection'/>
 
-            <NavigationItem position={31} text={`02.${t("header.nav.about")}`} redirect='#aboutme'/>
+            <NavigationItem position={31} text={`02.${t("header.nav.about")}`} redirect='/#aboutme'/>
 
-            <NavigationItem position={62} text={`03.${t("header.nav.work")}`} redirect='#work'/>
+            <NavigationItem position={62} text={`03.${t("header.nav.work")}`} redirect='/#work'/>
 
-            <NavigationItem position={99} text={`04.${t("header.nav.contact")}`} redirect='#contact'/>
+            <NavigationItem position={99} text={`04.${t("header.nav.contact")}`} redirect='/#contact'/>
         </ul>
 
         <div id={styles.nav_mobile} className={isMobileNavActive ? styles.active : styles.desactive}>

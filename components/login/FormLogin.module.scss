@@ -1,0 +1,63 @@
+.form{
+    padding: 30px;
+    background-color: var(--color-md);
+    display: flex;
+    flex-direction: column;
+    height: 40vh;
+    width: 30vw;
+    margin-top: 40px;
+    justify-content: space-around;
+    border: 1px solid var(--color-vl);
+    border-radius: 10px;
+    align-items: center;
+
+    input{
+        width: 100%;
+        background: none;
+        border: none;
+        height: 50px;
+        font-size: 16px;
+        border-bottom: 1px solid var(--color-vl);
+        color: var(--text-color);
+
+        &:-webkit-autofill,
+        &:-webkit-autofill:hover,
+        &:-webkit-autofill:focus,
+        &:-webkit-autofill:active {
+            transition: all 100000000s ease-in-out 0s;
+        }
+    }
+
+    .fill{
+        height: 50px;
+        width: 60%;
+        font-size: 20px;
+        font-weight: 200;
+        letter-spacing: 1px;
+        padding: 13px 20px 13px;
+        outline: 0;
+        z-index: 1;
+        border: 1px solid black;
+        cursor: pointer;
+        position: relative;
+        border: 1px solid var(--color-vl);
+        background-color: transparent;
+      
+        &::after{
+            content: "";
+            background-color: var(--color-l);
+            width: 100%;
+            z-index: -1;
+            position: absolute;
+            height: 100%;
+            top: 7px;
+            left: 7px;
+            transition: 0.2s;
+        }
+      
+        &:hover::after{
+            top: 0;
+            left: 0;
+        }
+      }
+}

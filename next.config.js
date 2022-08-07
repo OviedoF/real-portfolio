@@ -4,6 +4,10 @@ const nextConfig = {
   swcMinify: true,
   images: {
     domains: ['res.cloudinary.com']
+  },
+  env: {
+    USER: process.env.USER,
+    PASS: process.env.PASS
   }
 }
 
