@@ -1,21 +1,19 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { faLanguage, faPalette, faBars } from '@fortawesome/free-solid-svg-icons';
-import ConfigButton from './ConfigButton';
+import ConfigThemeButton from './ConfigThemeButton';
 import CloseNavMobileButton from './CloseNavMobileButton';
+import TranslateButton from './TranslateButton';
 
 const ConfigContainer = ({setIsMobileNavActive, isMobileNavActive}) => {
 
     return (
         <div>
-            <ConfigButton 
+            <ConfigThemeButton 
             icon={faPalette} 
             screen={'themes'}
             />
 
-            <ConfigButton 
-            icon={faLanguage} 
-            screen={'language'}
-            />
+            <TranslateButton/>
 
             <CloseNavMobileButton
                 icon={faBars}
@@ -32,7 +30,7 @@ const ConfigContainer = ({setIsMobileNavActive, isMobileNavActive}) => {
                     justify-content: center;
                 }
 
-                @media only screen and (max-width: 550px){
+                @media only screen and (max-width: 645px){
                     div{
                         width: 100%;
                         justify-content: flex-end;

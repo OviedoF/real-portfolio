@@ -12,6 +12,10 @@
     }
 }
 
-@media only screen and (max-width: 768px){
-
+@media only screen and (max-width: 540px){
+    .footer{
+        .presentation{
+            flex-direction: column-reverse;
+        }
+    }
 }

@@ -4,7 +4,7 @@ import styles from './ConfigButton.module.scss';
 import { useDispatch } from 'react-redux';
 import { activeScreen } from '../../redux/actions/screenActive.actions';
 
-export default function ConfigButton({icon, screen, setIsMobileNavActive, isMobileNavActive}) {
+export default function ConfigThemeButton({icon, screen, setIsMobileNavActive, isMobileNavActive}) {
   const dispatch = useDispatch();
 
   return (

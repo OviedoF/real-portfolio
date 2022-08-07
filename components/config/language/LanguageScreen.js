@@ -8,7 +8,6 @@ export default function LanguageScreen() {
 
   const handleLanguage = (language) => {
     i18n.changeLanguage(language);
-    console.log(i18n.language);
   }
 
   return (
@@ -18,8 +17,8 @@ export default function LanguageScreen() {
         <h3>{t("LanguageScreen.choose")}</h3>
 
         <ul>
-            <li onClick={() => handleLanguage("es")}>{t("LanguageScreen.spanish")}</li>
-            <li onClick={() => handleLanguage("en")}>{t("LanguageScreen.english")}</li>
+            <li onClick={() => handleLanguage("es")}>{t("LanguageScreen.es")}</li>
+            <li onClick={() => handleLanguage("en")}>{t("LanguageScreen.en")}</li>
         </ul>
     </div>
   )

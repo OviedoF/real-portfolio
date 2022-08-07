@@ -66,6 +66,13 @@ section#homeSection{
 	margin-top: 0;
 }
 
-/* themes */
+body::-webkit-scrollbar {
+    display: none;
+}
 
-/* ------ */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+	transition: all 100000000s ease-in-out 0s;
+}

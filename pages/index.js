@@ -10,11 +10,12 @@ import ContactSection from '../components/Contact/ContactSection';
 import Aos from 'aos';
 import "aos/dist/aos.css";
 import LanguageScreen from '../components/config/language/LanguageScreen';
+import ScrollIndicator from '../components/ScrollIndicator/ScrollIndicator';
+import FullScreenLoading from '../components/loading/FullScreenLoading';
 
 export default function Index({themes, projectsPrincipal, projectsSecundario, tecnologies}) {
   const screensActive = useSelector(state => state.screensActive);
   const themeActive = useSelector(state => state.themeActive);
-
   useEffect(() => {
     Aos.init({
         duration: 1200
@@ -23,7 +24,11 @@ export default function Index({themes, projectsPrincipal, projectsSecundario, te
   
   return (
     <main style={{padding: '0px 15%', backgroundColor: 'var(--color-dark)'}} theme={themeActive._id} >
+      <ScrollIndicator />
+
       {screensActive.themes ? <ThemeScreen themes={themes} screen={'themes'}/> : ''}
+
+      {screensActive.isLoading ? <FullScreenLoading /> : ''}
 
       <SocialMedia />
 
@@ -70,6 +75,8 @@ export async function getServerSideProps(){
   .then(res => res.data)
   .catch(err => console.log(err));
  
+  
+
   return {
       props: {
           themes,

@@ -45,9 +45,19 @@
     }
 }
 
-@media only screen and (max-width: 500px){
+@media only screen and (max-width: 540px){
     .redirects{
         flex-direction: column;
+        width: 100%;
+        margin-bottom: 30px;
+
+        div{
+            align-items: center;
+
+            p{
+                display: block;
+            }
+        }
 
         ul#page{
             display: none;

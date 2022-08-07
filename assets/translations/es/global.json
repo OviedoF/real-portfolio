@@ -17,8 +17,8 @@
     },
     "LanguageScreen": {
         "choose": "Elije tu lenguaje!",
-        "spanish": "Español",
-        "english": "Inglés"
+        "es": "Español",
+        "en": "Inglés"
     },
     "Home": {
         "subtitles": {

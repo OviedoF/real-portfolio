@@ -2,7 +2,8 @@ import { CHANGE_SCREEN, QUIT_SCREEN } from "../types";
 
 const initialState = {
     themes: false,
-    language: false
+    language: false,
+    isLoading: false
 };
 
 export default function screensActiveReducer(state = initialState, action) {

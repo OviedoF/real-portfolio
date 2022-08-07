@@ -5,7 +5,6 @@ import { useSelector } from 'react-redux';
 
 export default function ThemesScreen({themes, screen}) {
   const theme = useSelector(state => state);
-  console.log(theme)
 
   return (
     <div className={styles.menu}>
