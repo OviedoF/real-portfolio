@@ -32,6 +32,7 @@
         }
     },
     "About": {
+        "subtitle": "Sobre mi",
         "download-cv": "Descargar CV",
         "title": "Desarrollador Full-Stack",
         "description": "Soy un chico de 19 años al cual le gusta la programación, todo empezó desde que tenñia 16 años y descubrí el desarrollo web mientras navegaba por internet. Lo que me llevó a estudiar de forma independiente todo lo relacionado a este nicho y así fui queriendo más y más cada tecnología según avanzaba el tiempo, sobre todo en lo que tenga que ver con el ecosistema de React, pero sin dejar de lado Angular.",
@@ -49,9 +50,11 @@
         "backend-friends3": " Back-End son:"
     },
     "Experience": {
+        "subtitle": "Experiencia",
         "featured": "Proyecto destacado!"
     },
     "Contact": {
+        "subtitle": "Contacto",
         "full-name": "Nombre completo",
         "e-mail": "Dirección de correo electrónico",
         "type-query": "Asunto",

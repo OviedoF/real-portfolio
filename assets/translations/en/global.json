@@ -32,9 +32,10 @@
         }
     },
     "About": {
+        "subtitle": "About me",
         "download-cv": "Download CV",
         "title": "Full-Stack Developer",
-        "description": "I'm a 19 year old guy who likes programming, it all started since I was 16 years old and I discovered web development while surfing the internet. Which led me to study independently everything related to this niche and so I was wanting more and more each technology as time progressed, especially in what has to do with the React ecosystem, but without neglecting Angular.",
+        "description": "I'm a 19 year old guy who likes programming, it all started when I was 16 years old and I discovered web development while surfing the internet. Which led me to study independently everything related to this niche and so I was wanting more and more each technology as time progressed, especially in what has to do with the React ecosystem, but without neglecting Angular.",
         "birthday": "Birthday: 07 march 2003",
         "hobbies": "Hobbies: Cars, internet and Cats",
         "phone": "Phone: +54 392 621665",
@@ -49,9 +50,11 @@
         "backend-friends3": " Back-End are..."
     },
     "Experience": {
+        "subtitle": "Experience",
         "featured": "Featured Project"
     },
     "Contact": {
+        "subtitle": "Contact",
         "full-name": "Full Name",
         "e-mail": "E-Mail",
         "type-query": "Type of query",

@@ -3,8 +3,11 @@ import SubtitleSection from '../SubtitleSection';
 import PrincipalProjectCard from './PrincipalProjectCard';
 import styles from './ProjectsSection.module.scss';
 import SecondaryProjectCard from './SecondaryProjectCard';
+import { useTranslation } from 'react-i18next';
 
 export default function ProjectsSection({projectsPrincipal, projectsSecundario}) {
+  const [t, i18n] = useTranslation("global");
+
   const esPar= (number) => {
     return number % 2 == 0;
   }
@@ -12,7 +15,7 @@ export default function ProjectsSection({projectsPrincipal, projectsSecundario})
   return (
     <section className={styles.section} id='work'>
         <SubtitleSection 
-            section={'Work'} 
+            section={t("Experience.subtitle")} 
             number={'03'}
         />
 
