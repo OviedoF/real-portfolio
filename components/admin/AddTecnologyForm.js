@@ -31,6 +31,7 @@ export default function AddTecnologyForm() {
     }
     dataForm.append('documentation_link', form.documentation_link);
     dataForm.append('type', form.type);
+    dataForm.append('color', form.color);
 
     axios.post(`${process.env.HOSTNAME}api/tecnologies`, dataForm)
       .then(res => console.log(res.data))
@@ -47,6 +48,7 @@ export default function AddTecnologyForm() {
 
         <div className={styles.references}>
             <input onChange={(e) => handleChange(e)} type="text" name="documentation_link" id="" placeholder='Documentation link'/>
+            <input onChange={(e) => handleChange(e)} type="text" name="color" id="" placeholder='Color'/>
 
             <select name="type" id="" onChange={(e) => handleChange(e)}>
               <option value="frontend">Frontend</option>

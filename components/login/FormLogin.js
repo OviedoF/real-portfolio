@@ -3,11 +3,13 @@ import styles from './FormLogin.module.scss';
 import { useDispatch } from 'react-redux';
 import {login} from '../../redux/actions/auth.actions';
 import { useTranslation } from 'react-i18next';
+import {useRouter} from 'next/router';
 
 export default function FormLogin({setTimes, times}) {
     const [form, setForm] = useState({});
     const dispatch = useDispatch();
     const [t, i18n] = useTranslation("global");
+    const router = useRouter();
 
     const handleChange = (e) => {
         setForm({
@@ -21,6 +23,7 @@ export default function FormLogin({setTimes, times}) {
 
         if(form.name === process.env.USER && form.password === process.env.PASS){
             dispatch( login() );
+            router.push('/admin/panel');
         } else{
             setTimes(times+1);
         }
