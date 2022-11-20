@@ -19,7 +19,7 @@ export default function Index({themes, projectsPrincipal, projectsSecundario, te
   console.log(themes);
   console.log(projectsPrincipal);
   console.log(projectsSecundario);
-  console.log(techologies);
+  console.log(tecnologies);
   
   useEffect(() => {
     Aos.init({
