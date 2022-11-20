@@ -78,10 +78,10 @@ export async function getServerSideProps(){
 
   return {
       props: {
-          themes: themes,
-          projectsPrincipal: projectsPrincipal,
-          projectsSecundario: projectsSecundario,
-          tecnologies: tecnologies
+          themes,
+          projectsPrincipal,
+          projectsSecundario,
+          tecnologies
       }  
   };
 }
