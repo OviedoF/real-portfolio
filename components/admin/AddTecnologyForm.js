@@ -53,6 +53,7 @@ export default function AddTecnologyForm() {
             <select name="type" id="" onChange={(e) => handleChange(e)}>
               <option value="frontend">Frontend</option>
               <option value="backend">Backend</option>
+              <option value="util">Util</option>
             </select>
         </div>
 

@@ -1,6 +1,6 @@
 import { LOGOUT, LOGIN } from "../types";
 
-const initialState = false;
+const initialState = true;
 
 export default function authReducer(state = initialState, action) {
     switch (action.type) {

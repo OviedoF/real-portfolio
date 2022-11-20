@@ -2,6 +2,11 @@
     margin-top: 70px;
 }
 
+.principalContainer{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
 .secondaryContainer{
     width: 100%;
     display: flex;

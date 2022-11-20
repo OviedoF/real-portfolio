@@ -31,7 +31,8 @@ export default function AddProjectForm() {
     const dataForm = new FormData;
 
     dataForm.append('name', form.name);
-    dataForm.append('description', form.description);
+    dataForm.append('description_es', form.description_es);
+    dataForm.append('description_en', form.description_en);
     
     form.tools.forEach(el => {
       dataForm.append('tools', el);
@@ -55,7 +56,8 @@ export default function AddProjectForm() {
         <div className={styles.description}>
             <input onChange={(e) => handleChange(e)} type="text" name="name" id="" placeholder='name'/>
             <input onChange={(e) => handleChange(e)} type="file" name="image" id="" multiple/>
-            <textarea onChange={(e) => handleChange(e)} name="description" id="" cols="30" rows="10" placeholder='description'/>
+            <textarea onChange={(e) => handleChange(e)} name="description_es" id="" cols="30" rows="10" placeholder='descripcion español'/>
+            <textarea onChange={(e) => handleChange(e)} name="description_en" id="" cols="30" rows="10" placeholder='description english'/>
         </div>
 
         <div className={styles.references}>

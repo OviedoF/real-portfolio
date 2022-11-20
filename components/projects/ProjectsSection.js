@@ -19,9 +19,11 @@ export default function ProjectsSection({projectsPrincipal, projectsSecundario})
             number={'03'}
         />
 
-        {projectsPrincipal.map((el, index) => {
-            return <PrincipalProjectCard project={el} key={el._id} reverse={ esPar(index + 1) }/>
-        })}
+        <div className={styles.principalContainer}>
+          {projectsPrincipal.map((el, index) => {
+              return <PrincipalProjectCard project={el} key={el._id} reverse={ esPar(index + 1) }/>
+          })}
+        </div>
 
         <div className={styles.secondaryContainer}>
           {projectsSecundario.map(project => {

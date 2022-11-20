@@ -47,7 +47,8 @@
         "frontend-friends": "Mis amigos en el Front-End son:",
         "backend-friends1": "Y en el ",
         "backend-friends2": "lado oscuro",
-        "backend-friends3": " Back-End son:"
+        "backend-friends3": " Back-End son:",
+        "utils-friends": "Además, uso constantemente: "
     },
     "Experience": {
         "subtitle": "Experiencia",
