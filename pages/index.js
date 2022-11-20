@@ -69,12 +69,12 @@ export async function getServerSideProps(){
       .catch(err => console.log(err));
 
   const projectsSecundario = await axios(`${process.env.HOSTNAME}api/projects/type/secundario`)
-  .then(res => res.data)
-  .catch(err => console.log(err));
+      .then(res => res.data)
+      .catch(err => console.log(err));
 
   const tecnologies = await axios(`${process.env.HOSTNAME}api/tecnologies`)
-  .then(res => res.data)
-  .catch(err => console.log(err));
+      .then(res => res.data)
+      .catch(err => console.log(err));
 
   return {
       props: {
@@ -82,6 +82,6 @@ export async function getServerSideProps(){
           projectsPrincipal: projectsPrincipal,
           projectsSecundario: projectsSecundario,
           tecnologies: tecnologies
-      }
+      }  
   };
 }
