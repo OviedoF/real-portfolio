@@ -75,15 +75,13 @@ export async function getServerSideProps(){
   const tecnologies = await axios(`${process.env.HOSTNAME}api/tecnologies`)
   .then(res => res.data)
   .catch(err => console.log(err));
- 
-  
 
   return {
       props: {
-          themes,
-          projectsPrincipal,
-          projectsSecundario,
-          tecnologies
+          themes: themes || [],
+          projectsPrincipal: projectsPrincipal || [],
+          projectsSecundario: projectsSecundario || [],
+          tecnologies: tecnologies || []
       }
   };
 }

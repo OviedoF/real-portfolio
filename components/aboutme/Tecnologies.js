@@ -9,13 +9,15 @@ export default function Tecnologies({tecnologies}) {
     const [t] = useTranslation("global");
 
     useEffect(() => {
-        const backendData = tecnologies.filter(el => el.type == 'backend');
-        const frontendData = tecnologies.filter(el => el.type == 'frontend');
-        const utilsData = tecnologies.filter(el => el.type == 'util');
+        if(tecnologies){
+            const backendData = tecnologies.filter(el => el.type == 'backend');
+            const frontendData = tecnologies.filter(el => el.type == 'frontend');
+            const utilsData = tecnologies.filter(el => el.type == 'util');
 
-        setFrontend(frontendData);
-        setBackend(backendData);
-        setUtils(utilsData);
+            setFrontend(frontendData);
+            setBackend(backendData);
+            setUtils(utilsData);
+        }
     }, [tecnologies]);
 
   return (
