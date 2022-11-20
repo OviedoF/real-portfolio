@@ -20,13 +20,13 @@ export default function ProjectsSection({projectsPrincipal, projectsSecundario})
         />
 
         <div className={styles.principalContainer}>
-          {projectsPrincipal.map((el, index) => {
+          {projectsPrincipal && projectsPrincipal.map((el, index) => {
               return <PrincipalProjectCard project={el} key={el._id} reverse={ esPar(index + 1) }/>
           })}
         </div>
 
         <div className={styles.secondaryContainer}>
-          {projectsSecundario.map(project => {
+          {projectsSecundario && projectsSecundario.map(project => {
             return <SecondaryProjectCard project={project} key={project._id}/>
           })}
         </div>
