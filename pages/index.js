@@ -232,6 +232,31 @@ const projectsPrincipal = [
     "description_en": "A course platform dedicated to teaching and my utility. Where there is user registration, history, favorites and more things to come. The use I give it is to be able to have my annotations and learning on a page where, as an administrator, I can create MarkDown files and use them for rendering :)",
     "createdAt": "2022-11-20T00:37:05.634Z",
     "updatedAt": "2022-11-20T00:37:05.634Z"
+  },
+  {
+    "_id": "637976b13c8bce10e3b4c055",
+    "name": "Fuku Shop",
+    "imagesUrls": [
+      "https://res.cloudinary.com/syphhy/image/upload/v1668904616/h9voqevhmagtj8n1mflu.jpg",
+      "https://res.cloudinary.com/syphhy/image/upload/v1668904617/yjhru6m3zplc8vojz1ca.jpg",
+      "https://res.cloudinary.com/syphhy/image/upload/v1668904619/fgbyslhuoysawvtkwtdy.jpg",
+      "https://res.cloudinary.com/syphhy/image/upload/v1668904621/zndavr3nvgcv37z5tezc.jpg",
+    ],
+    "tools": [
+      "Sass",
+      "NextJS",
+      "Redux",
+      "NodeJS",
+      "Express",
+      "MongoDB"
+    ],
+    "github_link":"https://github.com/OviedoF/fukushop_frontend",
+    "deploy_link":"https://www.fukushop.com.ar/",
+    "type": "principal",
+    "description_es": "Una tienda de ropa con un diseño moderno y elegante. Se buscó destacar la idea de un diseño orientado a la cultura asiática e impresionante a la vista. No se ha añadido carrito de compras por petición de los clientes, debido al stock que manejan.",
+    "description_en": "A clothing store with a modern and elegant design. The idea of a design oriented to Asian culture and impressive to the eye was sought. No shopping cart has been added at the request of the customers, due to the stock they handle.",
+    "createdAt": "2022-11-20T00:37:05.634Z",
+    "updatedAt": "2022-11-20T00:37:05.634Z"
   }
 ]
 
